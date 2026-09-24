@@ -1,60 +1,43 @@
-# Heart-Disease-Risk-Analysis-r
 # Heart Disease Risk Analysis
 
 ### Exploring Cholesterol, Blood Pressure, Age, and Other Heart Disease Factors Using R & Shiny
 
-An exploratory data analysis and data visualization project investigating factors associated with heart disease using patient health data.
-
-This project was developed as part of the Data Mining & Visualization course at Bina Nusantara University and focuses on data exploration, visualization, data storytelling, and interactive visualization using R Shiny.
-
----
+![Heart Disease Infographic](poster/heart-disease-infographic.png)
 
 ## 📌 Project Overview
 
 Heart disease is one of the major global health challenges addressed under **SDG 3: Good Health and Well-Being**.
 
-This project explores patient health data to understand patterns associated with heart disease, with a primary focus on:
+This project presents an exploratory data analysis and data visualization study of patient health data to investigate patterns associated with heart disease. The analysis focuses primarily on **cholesterol, blood pressure, and age**, while also exploring additional factors such as gender, blood sugar, maximum heart rate, chest pain, ST slope, exercise-induced angina, and Oldpeak.
 
-- Cholesterol levels
-- Blood pressure
-- Age
-- Gender
-- Blood sugar
-- Maximum heart rate
-- Chest pain
-- ST slope
-- Exercise-induced angina
-- Oldpeak
-
-The analysis aims to communicate the patterns found in the dataset through clear visualizations and an interactive Shiny dashboard.
+The project combines **data analysis, visualization, data storytelling, and an interactive R Shiny dashboard** to communicate the findings in an accessible way.
 
 ---
 
 ## 🎯 Objectives
 
-The main objectives of this project are to:
+The objectives of this project are to:
 
-1. Explore the relationship between patient characteristics and heart disease status.
-2. Identify patterns in cholesterol, blood pressure, and age among patients.
-3. Analyze additional health-related factors associated with heart disease.
-4. Create informative data visualizations to communicate the findings.
-5. Develop an interactive Shiny dashboard for exploring the dataset.
-6. Present the findings through data storytelling and an infographic.
+- Explore patterns associated with heart disease in patient data.
+- Analyze the relationship between cholesterol levels and heart disease status.
+- Examine heart disease patterns across blood pressure and age groups.
+- Explore additional patient and clinical factors associated with heart disease.
+- Create clear and informative data visualizations.
+- Develop an interactive Shiny dashboard for exploring the analysis.
+- Communicate the findings through data storytelling and an infographic.
 
 ---
 
 ## 📊 Dataset
 
-The dataset used in this project is the **Heart Failure Prediction Dataset**, obtained from Kaggle.
+The project uses the **Heart Failure Prediction Dataset** from Kaggle.
 
-**Source:**  
+**Dataset Source:**  
 https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction
 
 The documentation states that the patient data were collected from four institutions specializing in heart disease and health research.
 
 ### Main Variables
-
-The analysis explores variables including:
 
 | Variable | Description |
 |---|---|
@@ -74,21 +57,17 @@ The analysis explores variables including:
 
 ## 🔎 Exploratory Data Analysis
 
-The analysis focuses on several major factors associated with heart disease.
+### Cholesterol
 
-### 1. Cholesterol
+Cholesterol levels were categorized into:
 
-Patients were categorized into:
-
-- **Normal:** cholesterol below 200 mg/dL
+- **Normal:** below 200 mg/dL
 - **At Risk:** 200–239 mg/dL
 - **High:** above 240 mg/dL
 
-The analysis shows that the high-cholesterol group contains a larger number of patients with heart disease compared with patients without heart disease.
+The analysis found that the high-cholesterol group contained a larger number of patients with heart disease compared with patients without heart disease.
 
----
-
-### 2. Blood Pressure
+### Blood Pressure
 
 Resting blood pressure was categorized into:
 
@@ -96,82 +75,64 @@ Resting blood pressure was categorized into:
 - Pre-Hypertensive
 - Hypertension
 
-The analysis examines the distribution of heart disease status across these blood pressure categories, particularly within the high-cholesterol population.
+The analysis examined the distribution of heart disease status across blood pressure categories, particularly within the high-cholesterol population.
 
----
+### Age
 
-### 3. Age
+Patients were grouped into different age categories to investigate differences in heart disease status across age groups.
 
-Patients were grouped into different age categories to explore how heart disease status varies across age groups.
+The analysis showed a higher proportion of heart disease in several older age groups compared with younger groups.
 
-The analysis shows a higher proportion of heart disease in several older age groups compared with younger groups.
+### Additional Factors
 
----
-
-### 4. Additional Factors
-
-The interactive analysis also explores:
+The project also explored:
 
 - Gender
 - Blood sugar
 - Maximum heart rate
-- Chest pain type
+- Chest pain
 - ST slope
 - Exercise-induced angina
 - Oldpeak
 
-These variables provide additional perspectives on patterns within the heart disease population.
+These variables were visualized to identify differences in heart disease proportions across patient groups.
 
 ---
 
 ## 📈 Key Findings
 
-Some notable patterns identified in the exploratory analysis include:
+The exploratory analysis identified several notable patterns:
 
-- High cholesterol is associated with a higher proportion of heart disease in this dataset.
-- Heart disease proportions vary across blood pressure categories.
-- Older age groups generally show higher proportions of heart disease.
-- Patients with certain chest pain categories show substantially different heart disease proportions.
-- Lower maximum heart rate categories show a higher proportion of patients with heart disease in the analyzed data.
-- ST slope categories show noticeable differences in heart disease proportions.
-- Patients experiencing exercise-induced angina show a higher proportion of heart disease in the dataset.
-- Higher Oldpeak categories show a greater proportion of patients with heart disease.
+- Patients in the **high-cholesterol** category had a higher proportion of heart disease in the analyzed dataset.
+- Heart disease proportions varied across **blood pressure categories**.
+- Several **older age groups** showed higher proportions of heart disease.
+- **Chest pain type** showed substantial differences in heart disease proportions.
+- The **low maximum heart rate** category had a high proportion of patients with heart disease.
+- **Flat and down ST-slope** categories showed higher proportions of heart disease than the up-slope category.
+- Patients experiencing **exercise-induced angina** represented a larger proportion of the heart disease group.
+- Higher **Oldpeak** categories showed greater proportions of patients with heart disease.
 
-> **Note:** These findings describe patterns and associations observed in the dataset. They should not be interpreted as proof that an individual factor directly causes heart disease.
-
----
-
-## 📊 Visualizations
-
-The project uses multiple visualization techniques, including:
-
-- Stacked bar charts
-- Percentage-based comparisons
-- Distribution charts
-- Correlation heatmap
-- Interactive visualizations
-
-The visualizations were designed to support data storytelling and make the relationships within the dataset easier to understand.
+> **Note:** These findings describe associations and patterns observed in the dataset. They should not be interpreted as evidence that an individual factor directly causes heart disease.
 
 ---
 
 ## 🌐 Interactive Shiny Dashboard
 
-An interactive Shiny dashboard was developed to allow users to explore the findings dynamically.
+An interactive **R Shiny dashboard** was developed to allow users to explore the analysis dynamically.
 
-### Dashboard Sections
+The dashboard consists of three main sections:
 
-**1. Knowing Heart Disease**
+### 1. Knowing Heart Disease
 
-Provides background information and an overview of factors explored in the analysis.
+Provides background information about heart disease and explores several factors including blood pressure, blood sugar, age, cholesterol, and gender.
 
-**2. Patient Overview**
+### 2. Patient Overview
 
-Allows users to explore patient characteristics, cholesterol levels, heart disease status, and related symptoms.
+Provides an overview of patient characteristics, cholesterol levels, heart disease status, and symptoms. Users can interact with the visualizations to explore different patient groups.
 
-**3. Conclusion**
+### 3. Conclusion
 
-Summarizes the main findings and connects the analysis to SDG 3: Good Health and Well-Being.
+Summarizes the main findings of the analysis and connects the research to **SDG 3: Good Health and Well-Being**.
 
 ### 🔗 Live Dashboard
 
@@ -181,9 +142,16 @@ https://kelompokaol.shinyapps.io/DoesCholesterolCauseHeartDisease_AOL/
 
 ## 🖼️ Data Storytelling Infographic
 
-The findings were also presented through an infographic focusing on the relationship between cholesterol and heart disease.
+The analysis was presented through an infographic focusing on the relationship between cholesterol and heart disease.
 
-![Heart Disease Infographic](poster/heart-disease-infographic.png)
+The infographic combines:
+
+- Data visualizations
+- Key statistics
+- Health-related context
+- Data-driven insights
+- Preventive recommendations
+- SDG 3 context
 
 ---
 
@@ -192,8 +160,8 @@ The findings were also presented through an infographic focusing on the relation
 - **R**
 - **R Markdown**
 - **R Shiny**
-- **Data Cleaning & Transformation**
 - **Exploratory Data Analysis (EDA)**
+- **Data Cleaning & Transformation**
 - **Data Visualization**
 - **Data Storytelling**
 
