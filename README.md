@@ -2,7 +2,6 @@
 
 ### Exploring Cholesterol, Blood Pressure, Age, and Other Heart Disease Factors Using R & Shiny
 
-![Heart Disease Infographic](poster/heart-disease-infographic.png)
 
 ## 📌 Project Overview
 
